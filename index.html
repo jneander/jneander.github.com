@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<div class="content">
+  {% assign first_post = site.posts.first %}
+  <h2><a href="{{ first_post.url }}">{{ first_post.title }}</a></h2>
+  {{ first_post.content }}
+</div>
