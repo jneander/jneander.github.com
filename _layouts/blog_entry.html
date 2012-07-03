@@ -2,16 +2,21 @@
 layout: default
 ---
 
-<h2 class="content">{{page.title}}</h2>
-
-{{ content }}
+<div class="content">
+  <h2>{{ page.title }}</h2>
+  {{ content }}
+</div>
 
 <div id="pagination">
   {% if page.previous %} 
     <a id="last" href="{{ page.previous.url }}">< {{ page.previous.title }}</a> 
+  {% else %}
+    <a id="last">&nbsp;</a>
   {% endif %}
   {% if page.next %}
     <a id="next" href="{{ page.next.url }}">{{ page.next.title }} ></a> 
+  {% else %}
+    <a id="next">&nbsp;</a>
   {% endif %}
-
 </div>
+<div style="clear: both;"></div>

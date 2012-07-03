@@ -6,3 +6,16 @@ layout: default
   <h2><a href="{{ first_post.url }}">{{ first_post.title }}</a></h2>
   {{ first_post.content }}
 </div>
+
+<div id="pagination">
+  {% if first_post.previous %}
+    <a id="last" href="{{ first_post.previous.url }}">< {{ first_post.previous.title }}</a>
+  {% else %}
+    <a id="last">&nbsp;</a>
+  {% endif %}
+  {% if first_post.next %}
+    <a id="next" href="{{ first_post.next.url }}">{{ first_post.next.title }} ></a>
+  {% else %}
+    <a id="next">&nbsp;</a>
+  {% endif %}
+</div>
