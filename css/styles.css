@@ -21,8 +21,12 @@ a, a:visited, a:hover {
   margin: 0 auto;
 }
 
-#header, #footer, #pagination, div.content {
+#pagination, div.content {
   padding: 1.2em;
+}
+
+#header, #footer {
+  padding: 1.2em 0;
 }
 
 #footer {
@@ -48,6 +52,11 @@ a, a:visited, a:hover {
 .standard_width {
   width: 600px;
   margin: 0 auto;
+}
+
+.padded_width {
+  width: 570px;
+  margin: 0px auto;
 }
 
 .center {
