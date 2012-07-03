@@ -1,0 +1,55 @@
+html, body, div, h1, h2, h3, h4, h5, h6, .reset {
+  padding: 0px;
+  margin: 0px;
+}
+
+a, a:visited, a:hover {
+  color: #3e3ebb;
+  text-decoration: none;
+}
+
+* {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.bg1 {
+  background: #ddd;
+}
+
+#main {
+  height: 100%;
+  margin: 0 auto;
+}
+
+#header, #footer, #pagination, div.content {
+  padding: 1.2em;
+}
+
+#footer {
+  font-size: .8em;
+}
+
+#pagination {
+  clear: both;
+}
+
+#previous {
+  float: left;
+}
+
+#next {
+  float: right;
+}
+
+.full_width {
+  width: 100%;
+}
+
+.standard_width {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
