@@ -1,15 +1,12 @@
 html, body, div, h1, h2, h3, h4, h5, h6, .reset {
   padding: 0px;
   margin: 0px;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 a, a:visited, a:hover {
   color: #3e3ebb;
   text-decoration: none;
-}
-
-* {
-  font-family: Georgia, "Times New Roman", serif;
 }
 
 .bg1 {

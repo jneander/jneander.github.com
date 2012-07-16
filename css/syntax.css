@@ -1,4 +1,5 @@
-ghlight  { background: #ffffff; }
+.highlight  { background: #e3e3e3; padding: 10px; font-family: "Lucida Console", Monaco, monospace}
+.highlight pre { margin: 0px }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
