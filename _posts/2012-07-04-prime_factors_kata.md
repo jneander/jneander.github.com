@@ -351,7 +351,7 @@ describe PrimeFactors do
   end
 end
 {% endhighlight %}
-Our test passes, but what are we testing? The number is called a Mersenne Prime, which is defined as being a positive prime integer that is one less than a power of two. To confirm that this number in fact is only factorable by itself, our algorithm will need to test it against every number between 2 and 2**19-1. That's a LOT of numbers to check. Our test times tell us that this is a bad idea. We can do better.
+Our test passes, but what are we testing? The number is called a Mersenne Prime, which is defined as being a positive prime integer that is one less than a power of two. To confirm that this number in fact is only factorable by itself, our algorithm will need to test it against every number between 2 and 2\*\*19-1. That's a LOT of numbers to check. Our test times tell us that this is a bad idea. We can do better.
 
 One of the tricks to checking primes is to use square roots. As the divisor used against a prime increases, the complementing quotient will decrease. If those values are equal, you have the square root. If the quotient is less than the divisor, any additional increments and checks with the divisor will be pointless, as these values will have already been checked. At that point, if we haven't found a factor, we should stop trying - we've got a prime.
 
