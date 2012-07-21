@@ -9,6 +9,21 @@ The operators act as follows
  - **.eql?** returns true if two objects have both equivalent value and type, regardless of identity
  - **.equals?** returns true if two objects are the same instance, having the same identity
 
+{% highlight ruby%}
+1.0 == 1
+# => true
+
+1.0.eql? 1
+# => false
+
+a = 1.0
+b = 1.0
+a.equals? a
+# => true
+a.equals? b
+# => false
+{% endhighlight %}
+
 In testing, the operators differ only visually
  - **==** defers to the *==* method
  - **eql** uses the *.eql?* method
