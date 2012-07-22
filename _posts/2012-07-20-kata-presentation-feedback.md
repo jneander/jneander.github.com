@@ -1,6 +1,7 @@
 ---
 layout: blog_entry
 title: Kata Presentation Feedback
+description: Thinking about improvements for my kata and its presentation
 ---
 Today, I performed my prime factors kata for Colin. I was nervous, despite my familiarity with the code to be demonstrated. This was a confidence issue, I think. To make matters worse, I was caffeinated. I delivered it as closely as I could to how it is presented in my previous blog post. Colin presented me with some feedback, which will certainly serve to be invaluable.
 

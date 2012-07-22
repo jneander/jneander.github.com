@@ -1,6 +1,7 @@
 ---
 layout: blog_entry
 title: == vs. eql vs. equals
+description: Thoughts on the subtle differences between these three similar operators
 ---
 It was suggested to me that it is common for Ruby developers to default to *==* when testing comparisons in their spec tests. This seemed odd to me, but it merited a little research in any case.
 

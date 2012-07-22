@@ -1,6 +1,7 @@
 ---
 layout: blog_entry
 title: Prime Factors Kata
+description: The rough first result of my first real assignment
 ---
 The requirements are fairly straightforward. We should have a 'PrimeFactors' module with one method 'of' to return our prime factors. This method should take an integer argument representing the number to factorize and return an array containing the prime factors. For any arguments below the lowest prime (2), an empty array should be returned.
 

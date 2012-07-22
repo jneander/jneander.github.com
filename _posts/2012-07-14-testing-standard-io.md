@@ -1,6 +1,7 @@
 ---
 layout: blog_entry
 title: Testing by Mocking Standard I/O
+description: Thoughts on thorough testing using mocks and the console
 ---
 My current assignment at 8th Light, a Ruby-based game of unbeatable Tic Tac Toe, depends on some approaches which I have never used before. All user interaction with the game is taking place through a command-line interface. To receive input from the user and to display visual elements, Ruby standard input and output are used. The part of this with which I was previously unfamiliar is how to test it. Performing tests on an interface, especially one as simple as this, should occur without requiring periodic user input or useless printing of visual game elements. Some questions needed to be asked and answered.
 
