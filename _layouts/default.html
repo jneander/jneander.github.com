@@ -2,32 +2,27 @@
 <html>
 <head>
   <meta charset=utf-8 />
-  <title>Jeremy Neander, Apprentice at 8th Light</title>
+  <title>{{ site.identity }}</title>
   <link rel="stylesheet" href="/css/styles.css" />
   <link rel="stylesheet" href="/css/syntax.css" />
+  <link rel="stylesheet" href="/css/disqus.css" />
 </head>
 <body>
 
-  <div id="header" class="full_width bg1">
+  <div id="header" class="padded_width bg1">
+    <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
+  </div>
+
+  <div class="full_width bg2">
     <div class="padded_width">
-      <h1>Jeremy Learns Craftsmanship</h1>
+
+      {{ content }}
+     
     </div>
   </div>
 
-  <div id="main" class="standard_width">
-
-    <div id="nav">
-
-    </div>
-
-    {{ content }}
-
-  </div>
-
-  <div id="footer" class="full_width bg1">
-    <div class="padded_width">
-      <p class="reset center">&#169; Jeremy Neander 2012</p>
-    </div>
+  <div id="footer" class="padded_width bg1">
+    <p class="reset center">&#169; {{ site.copyright }}</p>
   </div>
 
 </body>

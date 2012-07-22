@@ -1,21 +1,22 @@
 ---
 layout: default
 ---
-<div class="content">
-  {% assign first_post = site.posts.first %}
-  <h2><a href="{{ first_post.url }}">{{ first_post.title }}</a></h2>
-  {{ first_post.content }}
-</div>
+    <div class="content">
+    
+      <ul id="post_list">
+      {% for post in site.posts %}
 
-<div id="pagination">
-  {% if first_post.previous %}
-    <a id="last" href="{{ first_post.previous.url }}">< {{ first_post.previous.title }}</a>
-  {% else %}
-    <a id="last">&nbsp;</a>
-  {% endif %}
-  {% if first_post.next %}
-    <a id="next" href="{{ first_post.next.url }}">{{ first_post.next.title }} ></a>
-  {% else %}
-    <a id="next">&nbsp;</a>
-  {% endif %}
-</div>
+        <li class="post">
+        <div class="post_header">
+          <span class="date">{{ post.date | date: "%d %B, %Y" }}</span>
+          <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+        </div>
+        {% if post.description %}
+        <span class="description">{{ post.description }}</span>
+        {% endif %}
+        </li>
+
+      {% endfor %}
+      </ul>
+
+    </div>

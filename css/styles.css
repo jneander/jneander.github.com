@@ -9,42 +9,31 @@ a, a:visited, a:hover {
   text-decoration: none;
 }
 
-.bg1 {
-  background: #ddd;
-}
+.bg1, body { background: #ddd; }
+
+.bg2 { background: #fff; }
 
 #main {
+  background: #fff;
   height: 100%;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
-#pagination, div.content {
-  padding: 1.2em;
-}
+div.content { padding: 1.2em; }
 
-#header, #footer {
-  padding: 1.2em 0;
-}
+#pagination { padding: 0em 1.2em 1.2em 1.2em; }
 
-#footer {
-  font-size: .8em;
-}
+#header, #footer { padding: 1.2em 0; }
 
-#pagination {
-  clear: both;
-}
+#footer { font-size: .8em; }
 
-#previous {
-  float: left;
-}
+#pagination { clear: both; }
 
-#next {
-  float: right;
-}
+#previous { float: left; }
 
-.full_width {
-  width: 100%;
-}
+#next { float: right; }
+
+.full_width { width: 100%; }
 
 .standard_width {
   width: 600px;
@@ -56,6 +45,39 @@ a, a:visited, a:hover {
   margin: 0px auto;
 }
 
-.center {
-  text-align: center;
+.center { text-align: center; }
+
+div.content :last-child {
+  margin-bottom: 0px;
+}
+
+ul#post_list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+li.post { padding-bottom: 10px; }
+
+li.post:last-child { padding-bottom: 0px; }
+
+div.post_header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ddd;
+  position: relative;
+}
+
+li.post .title { display: block; }
+
+li.post .date {
+  font-size: 0.8em;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+li.post .description {
+  font-size: 0.8em;
+  font-style: italic;
 }
