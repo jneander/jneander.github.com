@@ -47,9 +47,16 @@ div.content { padding: 1.2em; }
 
 .center { text-align: center; }
 
-div.content :last-child {
-  margin-bottom: 0px;
+div.content h2 {
+  margin-bottom: 0.8em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ddd;
 }
+
+div.content :nth-child(2) { margin-top: 0px; }
+
+div.content :last-child { margin-bottom: 0px; }
 
 ul#post_list {
   list-style: none;
