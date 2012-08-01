@@ -8,7 +8,7 @@ layout: default
 
         <li class="post">
         <div class="post_header">
-          <span class="date">{{ post.date | date: "%d %B, %Y" }}</span>
+          <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
           <a class="title" href="{{ post.url }}">{{ post.title }}</a>
         </div>
         {% if post.description %}
