@@ -15,7 +15,7 @@ TDD consists of a repeated cycle of three linked steps:
 Performing each step supplies the conditions needed for the following step. The result of each cycle is a new element of code, be it a class, method, or other such component, which has a passing test confirming that all functionality performs as expected and/or required.
 
 ###The Three Rules
-In his [post]({http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd}) on the subject, Uncle Bob discusses some of the many advantages to TDD. He focuses on outlining the three rules which give TDD its structure:
+In his [post](http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd) on the subject, Uncle Bob discusses some of the many advantages to TDD. He focuses on outlining the three rules which give TDD its structure:
  - "You are not allowed to write any production code unless it is to make a failing unit test pass."
  - "You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures."
  - "You are not allowed to write any more production code than is sufficient to pass the one failing unit test."
@@ -23,7 +23,7 @@ In his [post]({http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd}) on 
 So far, on simple projects with very short requirements lists and simple designs, this process is great practice. As successive projects begin to complicate the design, however, it is becoming increasingly difficult to ensure that the design elements are solid and adaptable as the requirements list grows between iterations. The design must support the process, or the process itself will grind to a halt. But that's a discussion for a future post.
 
 ###Quick and Dirty Development
-Having spent time developing games, I sense some familiarity with the ideas present in TDD. While not directly transposable to or from TDD, the design cycle of "[quick and dirty prototyping]({http://www.gamasutra.com/view/feature/132702/quick_and_dirty_prototyping_a_.php?print=1})" has some value to offer.
+Having spent time developing games, I sense some familiarity with the ideas present in TDD. While not directly transposable to or from TDD, the design cycle of "[quick and dirty prototyping](http://www.gamasutra.com/view/feature/132702/quick_and_dirty_prototyping_a_.php?print=1)" has some value to offer.
  - Build prototypes as fast as possible.
  - Keep things ugly until the last possible second.
  - Revise or scrap until the game is fun.
