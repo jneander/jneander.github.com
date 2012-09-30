@@ -47,14 +47,17 @@ div.content { padding: 1.2em; }
 
 .center { text-align: center; }
 
-div.content h2 {
-  margin-bottom: 0.8em;
+div.content h2, h3 {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ddd;
 }
 
-div.content :nth-child(2) { margin-top: 0px; }
+div.content p { margin: 1em 0px 1em 0px; }
+
+div.content :first-child { margin-top: 0px; }
+
+div.content h2, h3, h4, h5 { margin: 1em 0px 0px 0px; }
 
 div.content :last-child { margin-bottom: 0px; }
 
