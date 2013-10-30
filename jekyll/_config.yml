@@ -1,0 +1,10 @@
+identity:   Jeremy Neander, Craftsman at 8th Light
+title:      Jeremy Learns Craftsmanship
+url:        http://www.jneander.com/
+copyright:  Jeremy Neander 2013
+
+auto:	    true
+pygments:   true
+
+source: './jekyll'
+destination: './builds/latest'
