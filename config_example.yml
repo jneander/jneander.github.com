@@ -1,0 +1,7 @@
+:old_build: 'builds/previous'
+:new_build: 'builds/latest'
+:amazon:
+  :access_key:  ACCESS_KEY
+  :secret_key:  SECRET_KEY
+  :source_path: 'builds/latest'
+  :bucket_name: 'example.com'

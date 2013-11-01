@@ -2,3 +2,4 @@ builds
 .DS_Store
 *.swp
 *~
+config.yml

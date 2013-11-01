@@ -1,13 +1,9 @@
-namespace :jekyll do
+$LOAD_PATH.unshift File.expand_path(File.dirname(__FILE__))
+CONFIG = YAML.load_file("config.yml")
 
-  desc "Build Jekyll site"
-  task :build do
-    system "jekyll build -s ./jekyll"
-  end
+Dir.glob('tasks/*.rake').each {|r| load r}
 
-  desc "Serve Jekyll site"
-  task :serve do
-    system "jekyll serve -s ./jekyll"
-  end
+task default: [:spec]
 
-end
+desc "Run specs, build site, deploy"
+task release: [:spec, :build, :deploy]
